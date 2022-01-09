@@ -1,10 +1,10 @@
-
+import Resume from "./Componets/resume";
 
 
 function App() {
   return (
-    <div className="App">
-
+    <div >
+      <Resume />
     </div>
   );
 }
