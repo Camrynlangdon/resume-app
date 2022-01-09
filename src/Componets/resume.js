@@ -5,7 +5,9 @@ import Styled from 'styled-components'
 const Container = Styled.div`
 display: column;
 border: solid;
+border-radius: 20px;
 padding: 15px;
+max-width: 400px;
 `
 
 const Banner = Styled.div`
