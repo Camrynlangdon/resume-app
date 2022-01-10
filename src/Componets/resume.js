@@ -49,7 +49,7 @@ function resume() {
                     </Year>
                 </Banner>
                 <Paragraph>
-                    Handled thousands of outbound deliveries from the backroom and floor inventories for online orders.
+                    Handled thousands of outbound deliveries from the backroom and floor inventories for online orders.  Ensured orders made it out before deadlines for great customer experience. Maintained customer service, sales, inventory, and self-management, and (POS) system trained.
                 </Paragraph>
             </Container>
 

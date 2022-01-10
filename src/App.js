@@ -11,6 +11,7 @@ display: flex;
 `
 const MainRow = Styled.div`
 display: column;
+align-items: center;
 `
 const SideRow = Styled.div`
 margin-top: 450px;
