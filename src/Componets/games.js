@@ -9,6 +9,10 @@ display: column;
 margin: 15px;
 `
 
+const Title = Styled.h2`
+color: rgb(0, 173, 181);
+`
+
 const GameContainer = Styled.div`
 display: flex;
 border: solid;
@@ -50,6 +54,8 @@ const games = () => {
 
     return (
         <MainContainer>
+            <Title>Hobby Projects</Title>
+
             <GameContainer>
                 <Image src={automation} />
 

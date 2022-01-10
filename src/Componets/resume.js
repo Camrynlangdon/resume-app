@@ -18,7 +18,7 @@ align-items: center;
 
 const Title = Styled.h2`
 padding-right: 13px;
-color: blue;
+color: rgb(0, 173, 181);
 
 `
 
