@@ -24,6 +24,7 @@ color: blue;
 
 const Year = Styled.h3`
 
+
 `
 
 const Paragraph = Styled.p`
