@@ -1,6 +1,8 @@
 import Styled from "styled-components";
 import Contact from "./Componets/contact";
+import Education from "./Componets/Education";
 import Games from "./Componets/games";
+import Music from "./Componets/music";
 import Resume from "./Componets/resume";
 import Title from "./Componets/Title";
 
@@ -11,7 +13,7 @@ const MainRow = Styled.div`
 display: column;
 `
 const SideRow = Styled.div`
-margin-top: 500px;
+margin-top: 450px;
 `
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
 
       <SideRow>
         <Contact />
+        <Education />
+        <Music />
       </SideRow>
 
     </MainContainer>

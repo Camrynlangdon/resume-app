@@ -34,7 +34,6 @@ padding: 13px;
 `
 
 const Languages = Styled.div`
-
 display: flex;
 `
 
