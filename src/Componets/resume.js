@@ -7,10 +7,10 @@ display: column;
 border: solid;
 border-radius: 20px;
 padding: 15px;
-margin-bottom: 60px;
+margin-bottom: 40px;
 margin-left: 60px;
-margin-left: 100px;
-max-width: 400px;
+margin-left: 20px;
+max-width: 700px;
 `
 
 const Banner = Styled.div`
@@ -28,11 +28,11 @@ const Year = Styled.h3`
 `
 
 const Paragraph = Styled.p`
-width: 400px;
+width: 700px;
 `
 
 const History = Styled.h2`
-padding-left: 120px;
+padding-left: 30px;
 color: rgb(0, 173, 181);
 `
 
