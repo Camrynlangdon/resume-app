@@ -8,6 +8,7 @@ import Title from "./Componets/Title";
 
 const MainContainer = Styled.div`
 display: flex;
+font-family: 'Roboto', sans-serif;
 `
 const MainRow = Styled.div`
 display: column;

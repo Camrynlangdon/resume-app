@@ -7,7 +7,9 @@ display: column;
 border: solid;
 border-radius: 20px;
 padding: 15px;
-margin: 50px;
+margin-bottom: 60px;
+margin-left: 60px;
+margin-left: 100px;
 max-width: 400px;
 `
 
@@ -18,12 +20,10 @@ align-items: center;
 
 const Title = Styled.h2`
 padding-right: 13px;
-color: rgb(0, 173, 181);
 
 `
 
 const Year = Styled.h3`
-
 
 `
 
@@ -31,6 +31,10 @@ const Paragraph = Styled.p`
 width: 400px;
 `
 
+const History = Styled.h2`
+padding-left: 120px;
+color: rgb(0, 173, 181);
+`
 
 
 
@@ -38,7 +42,7 @@ width: 400px;
 function resume() {
     return (
         <div>
-
+            <History>History</History>
             <Container>
                 <Banner>
                     <Title>
