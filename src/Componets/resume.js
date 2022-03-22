@@ -60,7 +60,7 @@ function resume() {
             <Container>
                 <Banner>
                     <Title>
-                        MarketSorce
+                        MarketSource
                     </Title>
                     <Year>
                         (2018 - 2019)
