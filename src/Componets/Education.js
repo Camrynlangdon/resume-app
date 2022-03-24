@@ -25,7 +25,7 @@ function education() {
             <Education>
                 <Title>Education</Title>
 
-                <Information>AS in Computer Science at Sierra College</Information>
+                <Information>Studied Computer Science at Sierra College</Information>
             </Education>
         </div>
     )

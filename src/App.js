@@ -25,7 +25,6 @@ function App() {
       <MainRow>
         <Title />
         <Games />
-        <Resume />
       </MainRow>
 
       <SideRow>
