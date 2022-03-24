@@ -3,6 +3,9 @@ import Styled from 'styled-components'
 import Runner_2D from './Images/2D_Platformer.png'
 import DuelStickShooter from './Images/duelStickShooter.PNG'
 import automation from './Images/automation.PNG'
+import automationClassStructure from './Images/AutomationClassStrucutre.PNG'
+import automationClassMap from './Images/AutomationMap.png'
+import nightmareMap from './Images/NightmareMap.png'
 
 const MainContainer = Styled.div`
 display: column;
@@ -49,12 +52,25 @@ color: white;
 `
 
 const GameDes = Styled.div`
-
 border: solid;
 border-radius: 15px;
 padding: 20px;
 margin-top: 15px;
 max-width: 700px;
+`
+
+const ImageDiv = Styled.div`
+
+align-items: center;
+`
+
+const ImageStructure = Styled.img`
+border-radius: 7px;
+`
+
+const ImageMap = Styled.img`
+max-width: 400px;
+border-radius: 7px;
 `
 
 
@@ -145,6 +161,10 @@ const games = () => {
                 <p>
                     RoboticArm - Probably my favorite part of this game, a mechanical factory arm that grabs items from different types of machines to place on either a conveyor belt or another machine.  Most of the code here involves the movement of the arm itself, items are picked up by the clamp attached to the mechanical arm, then the arm itself rotates 180 degrees and drops the item and resets to pick up the next item.
                 </p>
+                <ImageDiv>
+                    <ImageStructure src={automationClassStructure} />
+                    <ImageMap src={automationClassMap} />
+                </ImageDiv>
             </GameDes>
 
             <GameDes>
@@ -156,7 +176,7 @@ const games = () => {
                     Class Structure:
                 </h2>
                 <p>
-                    GameController - This class was is core of the game, it handles things like the main update loop and different active states for the player and enemy to read such as the score, health, time, ammo count, and lives.  This class is also responsible for UI elements such as the main menu and pause menu.
+                    GameController - This class is the core of the game, it handles things like the main update loop and different active states for the player and enemy to read such as the score, health, time, ammo count, and lives.  This class is also responsible for UI elements such as the main menu and pause menu.
                 </p>
                 <p>
                     Player - Here we have an update loop listing for player input on the keyboard and mouse location.  The Player class is also responsible for implementing weapons particles that emit from the players that make contact with enemies, doing so triggers functions in the enemies class and removes hit points until complete elimination. When firing different weapons, this class will remove the ammo count until reaching zero and switch back to the default weapon.
@@ -167,6 +187,9 @@ const games = () => {
                 <p>
                     WaveController - This is a crucial class that keeps track of enemy waves that are important for progressing the game forward.  The WaveController class has a menu that is within Unity itself that can keep track of each separate wave, enemies count, enemy type, and spawn timing.  When triggered, the controller will initialize each enemy separately which will instantly start working as determined by the enemy class.
                 </p>
+                <ImageDiv>
+                    <ImageMap src={nightmareMap} />
+                </ImageDiv>
             </GameDes>
 
         </MainContainer>
