@@ -28,15 +28,8 @@ const contact = () => {
             </Container>
 
             <Container>
-                <FontAwesomeIcon icon={faEnvelope} />
-                <h3>CamrynLangdon@gmail.com</h3>
-            </Container>
-
-            <Container>
                 <FontAwesomeIcon icon={faLinkedin} />
-                <a
-                    href="https://www.linkedin.com/in/camryn-langdon-5bab7a127/"
-                >Camryn Landon</a>
+                <a href="https://www.linkedin.com/in/camryn-langdon-5bab7a127/">LinkedIn</a>
             </Container>
 
             <Container>

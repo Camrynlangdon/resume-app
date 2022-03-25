@@ -5,37 +5,46 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 
 const MainDiv = Styled.div`
-display: flex;
-margin-bottom: 150px;
-margin-left: 20px;
-margin-top: 50px
+    display: flex;
+    margin-bottom: 150px;
+    margin-top: 50px
 `
 
 const Image = Styled.img`
-background-color: grey;
-height: 250px;
-width: 300px;
+    background-color: grey;
+    height: 250px;
+    width: 300px;
 `
 
 const Information = Styled.div`
-display: space-between;
-align-items: center;
-padding: 20px;
+    display: space-between;
+    align-items: center;
+    padding: 20px;
 `
 
 const Icons = Styled.a`
-padding: 5px;
-color: inherit;
+    padding: 5px;
+    color: inherit;
+`
+
+const NameHeading = Styled.h1`
+    margin-bottom: 7px;
+`
+
+const TitleHeading = Styled.h2`
+    margin-top: 0;
+    font-size: 1rem;
 `
 
 
 const Title = () => {
     return (
         <MainDiv>
-            <Image />
+            {/* <Image /> */}
 
             <Information>
-                <h2>Camryn Langdon</h2>
+                <NameHeading>Camryn Langdon</NameHeading>
+                <TitleHeading>Software Engineer</TitleHeading>
                 <Icons
                     href='https://www.linkedin.com/in/camryn-langdon-5bab7a127/'>
                     <FontAwesomeIcon icon={faLinkedin} />
