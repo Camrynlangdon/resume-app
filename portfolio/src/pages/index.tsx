@@ -25,6 +25,8 @@ const Page = Styled.div`
 const Heading = Styled.div`
   width: 100%;
   max-width: 1191px;
+  display: flex;
+  justify-content: space-between;
 `
 
 const Main = Styled.div`
@@ -58,6 +60,7 @@ function App() {
     <Page>
       <Heading>
         <Title />
+        <Contact />
       </Heading>
       <Main>
 
@@ -66,14 +69,14 @@ function App() {
           <Games />
         </MainColumn>
 
-        <SideColumn>
-          <Contact />
+        {/* <SideColumn>
+         
           {/* <Education /> */}
-          {/* <Music /> */}
-        </SideColumn>
+        {/* <Music /> */}
+        {/* </SideColumn> */}
 
       </Main>
-    </Page>
+    </Page >
   );
 }
 
