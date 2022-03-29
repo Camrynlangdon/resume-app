@@ -14,7 +14,6 @@ const Page = Styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin: -8px; */
 
   a {
     color: ${theme.primary};
@@ -22,8 +21,6 @@ const Page = Styled.div`
   }
 
 `
-
-
 
 const Heading = Styled.div`
   width: 100%;
@@ -48,9 +45,10 @@ const MainColumn = Styled.div`
 
 const SideColumn = Styled.div`
   padding: 15px;
+  width: 305px;
 
   @media (min-width: 601px){
-    margin-top: 84px;
+    margin-top: 70px;
   }
 `
 
@@ -70,7 +68,7 @@ function App() {
 
         <SideColumn>
           <Contact />
-          <Education />
+          {/* <Education /> */}
           {/* <Music /> */}
         </SideColumn>
 
