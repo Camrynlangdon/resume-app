@@ -1,60 +1,60 @@
+import '../styles/global.css'
 import React from 'react';
 import Styled from "styled-components";
 import Contact from "../components/contact";
 import Education from "../components/Education";
 import Games from "../components/games";
 import Music from "../components/music";
-import Resume from "../components/resume";
 import Title from "../components/Title";
 
 import theme from '../styles/theme'
 
 const Page = Styled.div`
-  display: flex;
-  justify-content: center;
-  background-color: ${theme.background};
   color: ${theme.text};
-  margin: -8px;
+  /* margin: -8px; */
 
   a {
     color: ${theme.primary};
     text-decoration: none;
   }
-
 `
 
-const MainContainer = Styled.div`
+const Heading = Styled.div`
+`
+
+const Main = Styled.div`
   display: flex;
-  max-width: 100%;
-  flex-wrap: wrap;
-  overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 `
-const MainRow = Styled.div`
-  display: column;
-  align-items: center;
+const Column = Styled.div`
+  display: flex;
+  flex-direction: column;
 `
-const SideRow = Styled.div`
-  margin-top: 450px;
-`
+
 
 function App() {
   return (
     <Page>
-      <MainContainer >
+      <Heading>
+        <Title />
+      </Heading>
+      <Main>
 
-        <MainRow>
-          <Title />
+        <Column>
+
           <Games />
-        </MainRow>
+        </Column>
 
-        <SideRow>
+        <Column>
           <Contact />
           <Education />
-          <Music />
-        </SideRow>
+          {/* <Music /> */}
+        </Column>
 
-      </MainContainer>
+      </Main>
     </Page>
   );
 }
