@@ -158,6 +158,7 @@ const games = () => {
                         </Languages>
 
                         <p>Battle your way though waves of enemies using different power ups and weapons!</p>
+                        <NavLink href="/blogs/pop" label="Read the blog" />
                     </Information>
 
                 </GameContainer>
@@ -210,6 +211,7 @@ const games = () => {
                 </ImageDiv>
             </GameDes> */}
 
+            {/*
             <GameDes>
                 <h2>Nightmare Nightmare</h2>
                 <p>
@@ -234,6 +236,7 @@ const games = () => {
                     <StaticImage src="NightmareMap.png" alt="Architecture map for the nightmare project" />
                 </ImageDiv>
             </GameDes>
+        */}
 
         </MainContainer>
     )

@@ -12,9 +12,15 @@ const ImageDiv = Styled.div`
 const AutomationBlog = () => {
     return <Blog title="Automation"
         description="Automate from raw ore into more advanced items using machines and conveyor belts!"
-        technologies={["Unity3D", "C#", "Abelton"]}
+        technologies={["Unity3D", "C#", "Ableton"]}
     >
         <h2>Class Structure:</h2>
+        <p>
+            “Automation” is a game that I always wanted to make, it is an identical copy to one of my favorite games called “Factorio”, a game that resides in the automated crafting genre.
+            In this game, raw ore such as iron, copper, oil, stone, or uranium can be extracted from the ground then processed to make more advanced items such as computer chips, steel, and plastics to name a few until you eventually arrive at making a full-scale rocket.
+            This game is a little unique as machines need to update themselves over time without being triggered by the player.
+            With so many machines updating every frame, it can easily run into performance issues, however, I design this game to run in a specific update structure to avoid unnecessary calculations bogging down the time it takes to update every machine.
+        </p>
         <p>
             Grid - The grid class is in charge of handling the main update loop.  The main loop updates each machine type in a predetermined order (Conveyor Belts {'>'} Robotic Arms {'>'} Miners {'>'} Assemblers) every frame (fixed at 60 frames per second to avoid going too fast).  Every machine that is placed by the player is stored in a 2D array with the location of placement as a coordinate.
         </p>

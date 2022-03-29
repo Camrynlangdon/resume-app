@@ -39,7 +39,7 @@ const SideColumn = Styled.div`
   width: 305px;
 
   @media (min-width: 601px){
-    margin-top: 70px;
+    margin-top: 60px;
   }
 `
 

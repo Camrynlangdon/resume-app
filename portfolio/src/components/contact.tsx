@@ -9,6 +9,7 @@ const MainDiv = Styled.div`
     padding: 20px;
     background-color: ${theme.foreground};
     border-radius: 12px;
+    min-width: 180px;
 `
 
 

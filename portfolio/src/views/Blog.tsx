@@ -11,7 +11,10 @@ type BlogProps = {
 }
 
 const BlogContainer = Styled.div`
+    margin-right: 40px;
+    margin-left: 40px;
     margin-top: 60px;
+    margin-bottom: 100px;
 `
 const BlogBody = Styled.div`
     margin-top: 50px;
