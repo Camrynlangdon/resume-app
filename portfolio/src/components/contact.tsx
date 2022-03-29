@@ -1,63 +1,59 @@
-import React, { Component } from 'react'
-import Styled from 'styled-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faLaptopCode } from '@fortawesome/free-solid-svg-icons'
-import { faDiscord, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import theme from '../styles/theme'
-
-const MainDiv = Styled.div`
-    padding: 20px;
-    background-color: ${theme.foreground};
-    border-radius: 12px;
-    min-width: 180px;
-`
-
-
+import React, { Component } from 'react';
+import Styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { faDiscord, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import theme from '../styles/theme';
+import Card from './Card';
 
 const InfoList = Styled.ul`
     list-style: none;
     margin: 0;
     padding: 0;
  
-`
+`;
 const ListItem = Styled.li`
     display: flex;
     align-items: center;
     height: 35px;
+    padding-right: auto;
+`;
+const IconContainer = Styled.div`
+    width: 40px;
+`;
 
-    svg {
-        width: 20%;
-    }
-`
-
-
-
+const ContactItem = ({
+  icon,
+  children,
+}: {
+  icon: React.Node;
+  children: React.ReactChild;
+}) => {
+  return (
+    <ListItem>
+      <IconContainer>
+        <FontAwesomeIcon icon={icon} />
+      </IconContainer>
+      <div>{children}</div>
+    </ListItem>
+  );
+};
 
 const contact = () => {
+  return (
+    <Card>
+      <InfoList>
+        <ContactItem icon={faHome}>Sacramento, CA</ContactItem>
+        <ContactItem icon={faLaptopCode}>Computer Science</ContactItem>
+        <ContactItem icon={faLinkedin}>
+          <a href="https://www.linkedin.com/in/camryn-langdon-5bab7a127/">
+            LinkedIn
+          </a>
+        </ContactItem>
+        <ContactItem icon={faDiscord}>Azus#0002</ContactItem>
+      </InfoList>
+    </Card>
+  );
+};
 
-    return (
-        <MainDiv>
-            <InfoList>
-                <ListItem>
-                    <FontAwesomeIcon icon={faHome} />
-                    <span>Sacramento, CA</span>
-                </ListItem>
-                <ListItem>
-                    <FontAwesomeIcon icon={faLaptopCode} />
-                    Computer Science
-                </ListItem>
-                <ListItem>
-                    <FontAwesomeIcon icon={faLinkedin} />
-                    <a href="https://www.linkedin.com/in/camryn-langdon-5bab7a127/">LinkedIn</a>
-                </ListItem>
-                <ListItem>
-                    <FontAwesomeIcon icon={faDiscord} />
-                    <h3>Azus#0002</h3>
-                </ListItem>
-            </InfoList>
-        </MainDiv>
-    )
-
-}
-
-export default contact
+export default contact;
