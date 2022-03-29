@@ -3,15 +3,18 @@ import Styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faDiscord, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import theme from '../styles/theme'
 
 const MainDiv = Styled.div`
-padding: 50px;
+    padding: 20px;
+    background-color: ${theme.foreground};
+    border-radius: 12px;
 `
 
 const Container = Styled.div`
-display: flex;
-gap: 10px;
-align-items: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 `
 
 

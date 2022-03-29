@@ -7,7 +7,7 @@ import theme from '../styles/theme'
 
 const MainContainer = Styled.div`
     display: column;
-    margin: 15px;
+    /* margin: 15px; */
 `
 
 const Title = Styled.h2`

@@ -11,27 +11,47 @@ import theme from '../styles/theme'
 
 const Page = Styled.div`
   color: ${theme.text};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* margin: -8px; */
 
   a {
     color: ${theme.primary};
     text-decoration: none;
   }
+
 `
 
+
+
 const Heading = Styled.div`
+  width: 100%;
+  max-width: 1191px;
 `
 
 const Main = Styled.div`
+  width: 1191px;
+  max-width: 100%;
   display: flex;
 
   @media (max-width: 600px) {
     flex-direction: column;
   }
 `
-const Column = Styled.div`
+const MainColumn = Styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  padding: 15px;
+`
+
+const SideColumn = Styled.div`
+  padding: 15px;
+
+  @media (min-width: 601px){
+    margin-top: 84px;
+  }
 `
 
 
@@ -43,16 +63,16 @@ function App() {
       </Heading>
       <Main>
 
-        <Column>
+        <MainColumn>
 
           <Games />
-        </Column>
+        </MainColumn>
 
-        <Column>
+        <SideColumn>
           <Contact />
           <Education />
           {/* <Music /> */}
-        </Column>
+        </SideColumn>
 
       </Main>
     </Page>
