@@ -89,6 +89,7 @@ const Information = Styled.div`
 `;
 const GameDescription = Styled.p`
     word-break: break-word;
+    margin-top: 20px;
 `;
 const GameItemListItem = Styled.li`
    
@@ -153,18 +154,6 @@ const games = () => {
             src="../images/game_screenshot_dual_stick_shooter.png"
             alt="Screenshot of the dual-stick shooter game"
           />
-        }
-        content={
-          <p>
-            This WebGL game was built as a team with my brothers Davon and{' '}
-            <a href="https://gage-langdon.com">Gage</a>. I owned the classes
-            responsible for pickable powerups such as player armor and speed
-            boosts as well as placeable items such as automated turrets that
-            would auto-target instantiated enemies. This was a great project
-            where I was able to work with a team utilizing git, ticket tracking
-            via github issues, and a discord channel to facilitate asyncronous
-            collaboration.
-          </p>
         }
       />
 
