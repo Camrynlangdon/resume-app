@@ -42,7 +42,7 @@ const Title = () => {
         <MainDiv>
             <Information>
                 <NameHeading>Camryn Langdon</NameHeading>
-                <TitleHeading>Software Engineer</TitleHeading>
+                <TitleHeading>Junior Frontend Developer</TitleHeading>
                 <Icons
                     href='https://www.linkedin.com/in/camryn-langdon-5bab7a127/'>
                     <FontAwesomeIcon icon={faLinkedin} />

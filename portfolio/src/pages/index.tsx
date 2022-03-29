@@ -7,24 +7,15 @@ import Games from "../components/games";
 import Music from "../components/music";
 import Title from "../components/Title";
 
-import theme from '../styles/theme'
+import Layout from '../components/layout'
 
-const Page = Styled.div`
-  color: ${theme.text};
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-  a {
-    color: ${theme.primary};
-    text-decoration: none;
-  }
 
-`
 
 const Heading = Styled.div`
   width: 100%;
   max-width: 1191px;
+  margin-top: 60px;
 `
 
 const Main = Styled.div`
@@ -53,9 +44,13 @@ const SideColumn = Styled.div`
 `
 
 
+
+
+
 function App() {
   return (
-    <Page>
+    <Layout>
+
       <Heading>
         <Title />
       </Heading>
@@ -73,7 +68,7 @@ function App() {
         </SideColumn>
 
       </Main>
-    </Page>
+    </Layout>
   );
 }
 

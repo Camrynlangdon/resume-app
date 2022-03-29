@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import Styled from 'styled-components'
 import { StaticImage } from "gatsby-plugin-image"
-
+import NavLink from './NavLink'
 
 import theme from '../styles/theme'
+
 
 const MainContainer = Styled.div`
     display: column;
@@ -12,7 +13,7 @@ const MainContainer = Styled.div`
 
 const Title = Styled.h2`
     margin-top: 0;
-    color: rgb(0, 173, 181);
+    color: ${theme['text-subheadings']};
 `
 
 const GamesColumn = Styled.div`
@@ -112,7 +113,7 @@ const games = () => {
 
     return (
         <MainContainer>
-            <Title>Recent Projects</Title>
+            {/* <Title>Recent Projects</Title> */}
 
             <GamesColumn>
                 <GameContainer>
@@ -134,6 +135,7 @@ const games = () => {
                         </Languages>
 
                         <GameDescription>Automate from raw ore into more advanced items using machines and conveyor belts!</GameDescription>
+                        <NavLink href="/blogs/automation" label="Read the blog" />
                     </Information>
 
                 </GameContainer>
@@ -183,7 +185,7 @@ const games = () => {
 
                 </GameContainer>
             </GamesColumn>
-
+            {/* 
             <GameDes>
                 <h2>Automation</h2>
                 <p>
@@ -206,7 +208,7 @@ const games = () => {
                     <StaticImage src="../images/AutomationClassStructure.PNG" alt="Programming class structure of the automation project" />
                     <StaticImage src="../images/AutomationMap" alt="Programming project architecture map for the automation project" />
                 </ImageDiv>
-            </GameDes>
+            </GameDes> */}
 
             <GameDes>
                 <h2>Nightmare Nightmare</h2>
