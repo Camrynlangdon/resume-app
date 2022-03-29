@@ -27,7 +27,6 @@ const MainColumn = Styled.div`
   flex-direction: column;
   justify-content: start;
   padding: 15px;
-  width: 100%;
 `;
 
 const SideColumn = Styled.div`
