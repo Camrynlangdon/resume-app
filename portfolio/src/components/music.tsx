@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactPlayer from "react-player"
-import styled from 'styled-components'
 import Styled from 'styled-components'
 
 
@@ -21,13 +20,11 @@ color: rgb(0, 173, 181);
 
 
 
-function music() {
+const Music = () => {
     return (
         <MainContainer>
-
-            <Title>Music</Title>
-
-            <MusicContainer>
+            <Title>Music </Title>\
+            < MusicContainer >
                 <ReactPlayer
                     url="https://soundcloud.com/azus-music/azus-x-n0body-cares-heartbeat-2"
                     height="250px"
@@ -35,7 +32,7 @@ function music() {
                 />
             </MusicContainer>
 
-            <MusicContainer>
+            < MusicContainer >
                 <ReactPlayer
                     url="https://soundcloud.com/azus-music/last-mistake"
                     height="250px"
@@ -43,7 +40,7 @@ function music() {
                 />
             </MusicContainer>
 
-            <MusicContainer>
+            < MusicContainer >
                 <ReactPlayer
                     url="https://soundcloud.com/azus-music/you-got-me-1"
                     height="250px"
@@ -51,7 +48,7 @@ function music() {
                 />
             </MusicContainer>
 
-            <MusicContainer>
+            < MusicContainer >
                 <ReactPlayer
                     url="https://soundcloud.com/azus-music/dont"
                     height="250px"
@@ -63,4 +60,4 @@ function music() {
     )
 }
 
-export default music
+export default Music

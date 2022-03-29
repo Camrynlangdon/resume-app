@@ -7,7 +7,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 const MainDiv = Styled.div`
     display: flex;
     margin-bottom: 150px;
-    margin-top: 50px
+    margin-top: 50px;
 `
 
 const Image = Styled.img`
@@ -40,11 +40,9 @@ const TitleHeading = Styled.h2`
 const Title = () => {
     return (
         <MainDiv>
-            {/* <Image /> */}
-
             <Information>
                 <NameHeading>Camryn Langdon</NameHeading>
-                <TitleHeading>Software Engineer</TitleHeading>
+                <TitleHeading>Junior Frontend Developer</TitleHeading>
                 <Icons
                     href='https://www.linkedin.com/in/camryn-langdon-5bab7a127/'>
                     <FontAwesomeIcon icon={faLinkedin} />

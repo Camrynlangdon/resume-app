@@ -1,59 +1,45 @@
 import React, { Component } from 'react'
 import Styled from 'styled-components'
-import Runner_2D from './Images/2D_Platformer.png'
-import DuelStickShooter from './Images/duelStickShooter.PNG'
-import automation from './Images/automation.PNG'
-import automationClassStructure from './Images/AutomationClassStrucutre.PNG'
-import automationClassMap from './Images/AutomationMap.png'
-import nightmareMap from './Images/NightmareMap.png'
+import { StaticImage } from "gatsby-plugin-image"
+import NavLink from './NavLink'
 
-import theme from '../theme.json'
+import theme from '../styles/theme'
+
 
 const MainContainer = Styled.div`
     display: column;
-    margin: 15px;
+    /* margin: 15px; */
 `
 
 const Title = Styled.h2`
-    color: rgb(0, 173, 181);
+    margin-top: 0;
+    color: ${theme['text-subheadings']};
 `
 
 const GamesColumn = Styled.div`
-    background-color: ${theme.foreground};
+   
     max-width: 700px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    
     padding-top: 20px;
-    border-radius: 12px;
 `
 const GameContainer = Styled.div`
     display: flex;
     margin-bottom: 30px;
+    
+
+    background-color: ${theme.foreground};
+    padding: 20px;
+    border-radius: 12px;
 
     @media only screen and (max-width: 768px) {
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
     }
    
 `
 
-const Image = Styled.img`
-    width: 100%;
-    max-width: 400px;
-    border-radius: 12px;
-`
-
-const Information = Styled.div`
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    @media only screen and (min-width: 768px) {
-        padding: 13px;
-    }
-   
-`
 
 const Languages = Styled.div`
     display: flex;
@@ -83,21 +69,6 @@ const GameDes = Styled.div`
 const ImageDiv = Styled.div`
     max-width: 100%;
 `
-
-const ImageStructure = Styled.img`
-    border-radius: 7px;
-`
-
-const ImageMap = Styled.img`
-    max-width: 400px;
-    border-radius: 7px;
-`
-
-const ResponseImage = Styled.img`
-    width: 100%;
-    max-width: 420px;
-`
-
 const GameTitle = Styled.h4`
     font-size: 1.7rem;
     margin-bottom: 12px;
@@ -105,15 +76,50 @@ const GameTitle = Styled.h4`
 `
 
 
+const ImageContainer = Styled.div`
+    width: 400px;
+    max-width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    @media (min-width: 768px) {
+        margin-right: 21px;
+
+        /* margin-top: auto;
+        margin-bottom: auto;   */
+    }
+`
+const Information = Styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media (min-width: 769px) {
+        max-width: 50%;
+    }
+   
+`
+const GameDescription = Styled.p`
+    word-break: break-word;
+`
+
+
 const games = () => {
 
     return (
         <MainContainer>
-            <Title>Recent Projects</Title>
+            {/* <Title>Recent Projects</Title> */}
 
             <GamesColumn>
                 <GameContainer>
-                    <Image src={automation} />
+                    <ImageContainer>
+                        <StaticImage src="../images/automation.PNG" alt="Automation game screenshot" />
+                    </ImageContainer>
 
                     <Information>
 
@@ -127,15 +133,17 @@ const games = () => {
                                 Unity 3D
                             </CodingLanguages>
                         </Languages>
-                        
-                        <p>Automate from raw ore into more advanced items using machines and conveyor belts!</p>
+
+                        <GameDescription>Automate from raw ore into more advanced items using machines and conveyor belts!</GameDescription>
+                        <NavLink href="/blogs/automation" label="Read the blog" />
                     </Information>
 
                 </GameContainer>
 
                 <GameContainer>
-                    <Image src={DuelStickShooter} />
-
+                    <ImageContainer>
+                        <StaticImage src="../images/game_screenshot_dual_stick_shooter.png" alt="Screenshot of the dual-stick shooter game" />
+                    </ImageContainer>
                     <Information>
 
                         <GameTitle>Pop</GameTitle>
@@ -150,16 +158,19 @@ const games = () => {
                         </Languages>
 
                         <p>Battle your way though waves of enemies using different power ups and weapons!</p>
+                        <NavLink href="/blogs/pop" label="Read the blog" />
                     </Information>
 
                 </GameContainer>
 
                 <GameContainer>
-                    <Image src={Runner_2D} />
-
+                    <ImageContainer>
+                        <StaticImage src="../images/game_screenshot_2d_platformer.png" alt="screeshot of the 2d platformer game" />
+                    </ImageContainer>
                     <Information>
 
                         <GameTitle>2D Platformer</GameTitle>
+
 
                         <Languages>
                             <CodingLanguages>
@@ -175,7 +186,7 @@ const games = () => {
 
                 </GameContainer>
             </GamesColumn>
-
+            {/* 
             <GameDes>
                 <h2>Automation</h2>
                 <p>
@@ -195,11 +206,12 @@ const games = () => {
                     RoboticArm - Probably my favorite part of this game, a mechanical factory arm that grabs items from different types of machines to place on either a conveyor belt or another machine.  Most of the code here involves the movement of the arm itself, items are picked up by the clamp attached to the mechanical arm, then the arm itself rotates 180 degrees and drops the item and resets to pick up the next item.
                 </p>
                 <ImageDiv>
-                    <ResponseImage src={automationClassStructure} />
-                    <ResponseImage src={automationClassMap} />
+                    <StaticImage src="../images/AutomationClassStructure.PNG" alt="Programming class structure of the automation project" />
+                    <StaticImage src="../images/AutomationMap" alt="Programming project architecture map for the automation project" />
                 </ImageDiv>
-            </GameDes>
+            </GameDes> */}
 
+            {/*
             <GameDes>
                 <h2>Nightmare Nightmare</h2>
                 <p>
@@ -221,9 +233,10 @@ const games = () => {
                     WaveController - This is a crucial class that keeps track of enemy waves that are important for progressing the game forward.  The WaveController class has a menu that is within Unity itself that can keep track of each separate wave, enemies count, enemy type, and spawn timing.  When triggered, the controller will initialize each enemy separately which will instantly start working as determined by the enemy class.
                 </p>
                 <ImageDiv>
-                    <ResponseImage src={nightmareMap} />
+                    <StaticImage src="NightmareMap.png" alt="Architecture map for the nightmare project" />
                 </ImageDiv>
             </GameDes>
+        */}
 
         </MainContainer>
     )

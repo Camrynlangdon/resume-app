@@ -1,0 +1,46 @@
+{
+  "name": "camryn-langdon.com",
+  "version": "1.0.0",
+  "private": true,
+  "description": "camryn-langdon.com",
+  "author": "Gage",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "babel-plugin-styled-components": "^2.0.6",
+    "gatsby": "^4.10.3",
+    "gatsby-plugin-google-analytics": "^4.10.0",
+    "gatsby-plugin-image": "^2.10.1",
+    "gatsby-plugin-manifest": "^4.10.2",
+    "gatsby-plugin-react-helmet": "^5.10.0",
+    "gatsby-plugin-sharp": "^4.10.2",
+    "gatsby-plugin-sitemap": "^5.10.2",
+    "gatsby-plugin-styled-components": "^5.10.0",
+    "gatsby-source-filesystem": "^4.10.1",
+    "gatsby-transformer-sharp": "^4.10.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-player": "^2.10.0",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "@types/styled-components": "^5.1.24",
+    "typescript": "^4.6.3"
+  }
+}
