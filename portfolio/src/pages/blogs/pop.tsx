@@ -31,7 +31,7 @@ const pop = () => {
             WaveController - This is a crucial class that keeps track of enemy waves that are important for progressing the game forward. The WaveController class has a menu that is within Unity itself that can keep track of each separate wave, enemies count, enemy type, and spawn timing. When triggered, the controller will initialize each enemy separately which will instantly start working as determined by the enemy class.
         </p>
         <ImageDiv>
-        <StaticImage src="../images/game_screenshot_2d_platformer.png" alt="screeshot of the 2d platformer game" />
+        <StaticImage src="../../images/pop_Map.png" alt="screenshot of the Pop game" />
         </ImageDiv>
     </Blog>
 }
