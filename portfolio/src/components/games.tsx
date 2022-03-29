@@ -118,7 +118,7 @@ const games = () => {
             <GamesColumn>
                 <GameContainer>
                     <ImageContainer>
-                        <StaticImage src="../images/automation.PNG" alt="Automation game screenshot" />
+                        <StaticImage src="../images/automation.png" alt="Automation game screenshot" />
                     </ImageContainer>
 
                     <Information>
