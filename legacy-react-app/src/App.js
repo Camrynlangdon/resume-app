@@ -1,10 +1,10 @@
 import Styled from "styled-components";
-import Contact from "./Componets/contact";
-import Education from "./Componets/Education";
-import Games from "./Componets/games";
-import Music from "./Componets/music";
-import Resume from "./Componets/resume";
-import Title from "./Componets/Title";
+import Contact from "./components/contact";
+import Education from "./components/Education";
+import Games from "./components/games";
+import Music from "./components/music";
+import Resume from "./components/resume";
+import Title from "./components/Title";
 
 import theme from './theme.json'
 
