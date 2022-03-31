@@ -129,59 +129,6 @@ const GameItem = ({
   );
 };
 
-const games = () => {
-  return (
-    <GamesList>
-      <GameItem
-        title="Automation"
-        description="Automate from raw ore into more advanced items using machines and conveyor belts!"
-        technologies={['C#', 'Unity']}
-        blogPath="/blogs/automation"
-        image={
-          <StaticImage
-            src="../images/automation.png"
-            alt="Screenshot of a conveyor belt and two robotic arms from the game"
-          />
-        }
-      />
-      <GameItem
-        title="Pop"
-        description="Battle your way though waves of enemies using different power ups and weapons!"
-        technologies={['C#', 'Unity']}
-        blogPath="/blogs/pop"
-        image={
-          <StaticImage
-            src="../images/game_screenshot_dual_stick_shooter.png"
-            alt="Screenshot of the dual-stick shooter game"
-          />
-        }
-      />
 
-      <Card>
-        <GameContainer>
-          <ImageContainer>
-            <StaticImage
-              src="../images/game_screenshot_2d_platformer.png"
-              alt="screeshot of the 2d platformer game"
-            />
-          </ImageContainer>
-          <Information>
-            <GameTitle>2D Platformer</GameTitle>
 
-            <Languages>
-              <CodingLanguages>C#</CodingLanguages>
-              <CodingLanguages>Unity 3D</CodingLanguages>
-            </Languages>
-
-            <p>
-              Jump and dodge past sawblades and rock people to reach the finish
-              line!
-            </p>
-          </Information>
-        </GameContainer>
-      </Card>
-    </GamesList>
-  );
-};
-
-export default games;
+export default games
