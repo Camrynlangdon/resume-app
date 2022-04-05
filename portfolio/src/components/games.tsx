@@ -96,13 +96,15 @@ const GameItemListItem = Styled.li`
 `;
 
 type GameItemProps = {
-  image: React.Node; // image component
+  image: React.ReactElement; // image component
   title: string; // name of the game
   technologies: Array<string>; // technologies used ex. ["git", "javascript"]
-  description: string; // quick description of the game iteself. "A game where two players attack..."
+  description: string; // quick description of the game itself. "A game where two players attack..."
   content?: React.ReactNode; // technical details about your involvement in the project
   blogPath: string; // blog page path ex. 'automation'
 };
+
+
 const GameItem = ({
   image,
   title,
@@ -129,6 +131,49 @@ const GameItem = ({
   );
 };
 
+const games = () => {
+  return (
+    <GamesList>
+      <GameItem
+        title="Automation"
+        description="Automate from raw ore into more advanced items using machines and conveyor belts!"
+        technologies={['C#', 'Unity']}
+        blogPath="/blogs/automation"
+        image={
+          <StaticImage
+            src="../images/automation.png"
+            alt="Screenshot of a conveyor belt and two robotic arms from the game"
+          />
+        }
+      />
+      <GameItem
+        title="Pop"
+        description="Battle your way though waves of enemies using different power ups and weapons!"
+        technologies={['C#', 'Unity']}
+        blogPath="/blogs/pop"
+        image={
+          <StaticImage
+            src="../images/game_screenshot_dual_stick_shooter.png"
+            alt="Screenshot of the dual-stick shooter game"
+          />
+        }
+      />
+      <GameItem
+        title="2D Platformer"
+        description="Jump and dodge past sawblades and rock people to reach the finish line!"
+        technologies={['C#', 'Unity']}
+        blogPath="/blogs/Game2DRunner"
+        image={
+          <StaticImage
+            src="../images/game_screenshot_2d_platformer.png"
+            alt="Screenshot of the 2d platformer game"
+          />
+        }
+      />
+
+    </GamesList>
+  );
+};
 
 
 export default games
