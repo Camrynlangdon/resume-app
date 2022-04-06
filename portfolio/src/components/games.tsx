@@ -7,10 +7,6 @@ import Card from './Card';
 import NavLink from './NavLink';
 import TechnologiesList from './Technologies-list';
 
-const Title = Styled.h2`
-    margin-top: 0;
-    color: ${theme['text-subheadings']};
-`;
 
 const GamesList = Styled.ul`
     padding: 0;
@@ -28,34 +24,7 @@ const GameContainer = Styled.div`
     }
    
 `;
-const Languages = Styled.div`
-    display: flex;
-`;
 
-const CodingLanguages = Styled.div`
-    display: flex;
-    align-items: center;
-    background-color: rgb(57, 62, 70);
-    height: 10px;
-    padding: 12px;
-    border-radius: 15px;
-    color: white;
-    font-size: .9rem;
-    margin-right: 4px;
-    opacity: .9;
-`;
-
-const GameDes = Styled.div`
-    border: solid;
-    border-radius: 15px;
-    padding: 20px;
-    margin-top: 15px;
-    max-width: 700px;
-`;
-
-const ImageDiv = Styled.div`
-    max-width: 100%;
-`;
 const GameTitle = Styled.h4`
     font-size: 1.7rem;
     margin-bottom: 12px;
@@ -77,6 +46,7 @@ const ImageContainer = Styled.div`
         margin-right: 21px;
     }
 `;
+
 const Information = Styled.div`
     display: flex;
     flex-direction: column;
@@ -168,6 +138,18 @@ const games = () => {
             src="../images/game_screenshot_2d_platformer.png"
             alt="Screenshot of the 2d platformer game"
           />
+        }
+      />
+      <GameItem
+        title="Reddit Viewer"
+        description="View hot topics strait from the live feed of Reddit"
+        technologies={['React.js', 'CSS']}
+        blogPath="/blogs/redditViewer"
+        image={
+          <StaticImage
+            src="../images/RedditViewer_screenshot.PNG"
+            alt="Screenshot of the Reddit Viewer"
+          /> 
         }
       />
 
