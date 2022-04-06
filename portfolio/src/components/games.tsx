@@ -105,6 +105,18 @@ const games = () => {
   return (
     <GamesList>
       <GameItem
+        title="Reddit Viewer"
+        description="View hot topics strait from the live feed of Reddit!"
+        technologies={['React.js', 'CSS']}
+        blogPath="/blogs/redditViewer"
+        image={
+          <StaticImage
+            src="../images/RedditViewer_screenshot.PNG"
+            alt="Screenshot of the Reddit Viewer"
+          /> 
+        }
+      />
+      <GameItem
         title="Automation"
         description="Automate from raw ore into more advanced items using machines and conveyor belts!"
         technologies={['C#', 'Unity']}
@@ -140,19 +152,6 @@ const games = () => {
           />
         }
       />
-      <GameItem
-        title="Reddit Viewer"
-        description="View hot topics strait from the live feed of Reddit"
-        technologies={['React.js', 'CSS']}
-        blogPath="/blogs/redditViewer"
-        image={
-          <StaticImage
-            src="../images/RedditViewer_screenshot.PNG"
-            alt="Screenshot of the Reddit Viewer"
-          /> 
-        }
-      />
-
     </GamesList>
   );
 };
