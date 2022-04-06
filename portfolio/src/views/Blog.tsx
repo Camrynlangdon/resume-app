@@ -1,3 +1,4 @@
+import '../styles/global.css';
 import React from 'react';
 import Layout from '../components/layout';
 import Styled from 'styled-components';
