@@ -144,7 +144,7 @@ const games = () => {
         title="Reddit Viewer"
         description="View hot topics strait from the live feed of Reddit"
         technologies={['React.js', 'CSS']}
-        blogPath="/blogs/Game2DRunner"
+        blogPath="/blogs/redditViewer"
         image={
           <StaticImage
             src="../images/RedditViewer_screenshot.PNG"

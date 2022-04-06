@@ -8,6 +8,7 @@ type BlogProps = {
   title: string;
   description: string;
   technologies: Array<string>;
+  websiteLink?: keyof JSX.IntrinsicElements;
   children: React.ReactChild | Array<React.ReactChild>;
 };
 
@@ -23,6 +24,10 @@ const BlogBody = Styled.div`
 const BlogTitle = Styled.h1`
     margin-top: 30px;
 `;
+
+
+
+
 const BlogDescription = Styled.p``;
 
 const Blog = ({
