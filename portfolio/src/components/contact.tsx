@@ -3,6 +3,13 @@ import Styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import { faDiscord, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+import { config, IconProp } from "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/fontawesome-svg-core/styles.css"
+
+// Fix huge icon flash: https://github.com/FortAwesome/react-fontawesome/issues/234
+config.autoAddCss = false
+
 import theme from '../styles/theme';
 import Card from './Card';
 
@@ -26,7 +33,7 @@ const ContactItem = ({
   icon,
   children,
 }: {
-  icon: React.Node;
+  icon: IconProp;
   children: React.ReactChild;
 }) => {
   return (
