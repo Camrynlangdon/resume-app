@@ -32,7 +32,7 @@ const GameTitle = Styled.h4`
 `;
 
 const ImageContainer = Styled.div`
-    width: 400px;
+    width: 350px;
     max-width: 100%;
     object-fit: cover;
     overflow: hidden;
