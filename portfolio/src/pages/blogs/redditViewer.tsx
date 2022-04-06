@@ -5,9 +5,11 @@ import { StaticImage } from "gatsby-plugin-image"
 
 
 const ImageDiv = Styled.div`
-    max-width: 100%;
-    max-height: 300px;
     
+`
+const Image = Styled.div`
+    max-width: 100%;
+    padding: 15px;
 `
 const WebsiteLink = Styled.a`
 
@@ -18,9 +20,10 @@ const redditViewer = () => {
         description="View hot topics strait from the live feed of Reddit!"
         technologies={['React.js', 'CSS']}
     >
-        <h2>Class Structure:</h2>
 
         <WebsiteLink href='https://camryns-reddit-viewer.netlify.app/' target="_blank">Check out the site here!</WebsiteLink>
+        
+        <h2>Class Structure:</h2>
 
         <p>
         “Reddit Viewer” is an application I made to practice using APIs and reusable components.  This application takes a value (r/”subreddit name”) and requests the information using the official Reddit API.  The return is a long JSON file that is parsed out into useful information for the user.
@@ -28,11 +31,17 @@ const redditViewer = () => {
         </p>
         
         <ImageDiv>
-        <StaticImage src="../../images/RedditViewer_screenshot_mobile.jpg" alt="screenshot of the Reddit viewer"
-        layout="constrained" 
-        />
-        <StaticImage src="../../images/RedditViewer_Files.PNG" alt="screenshot of the files"/>
-        <StaticImage src="../../images/RedditCodeExample_Files.PNG" alt="screenshot of the code"/>
+            <Image
+            style={{
+                maxWidth:"200px"
+            }}
+            >
+                <StaticImage src="../../images/RedditViewer_screenshot_mobile.jpg" alt="screenshot of the Reddit viewer"/>
+            </Image>
+
+            <Image>
+                <StaticImage src="../../images/RedditViewerCodeScreenShot.png" alt="screenshot of the files"/>
+            </Image>
         </ImageDiv>
     </Blog>
 }
