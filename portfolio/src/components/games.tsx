@@ -117,6 +117,18 @@ const games = () => {
         }
       />
       <GameItem
+        title="[unnamed]"
+        description="Add modules and customize your very own site using provided tools"
+        technologies={['React.js', 'TypeScript', 'CSS']}
+        blogPath="/blogs/nonamed"
+        image={
+          <StaticImage
+            src="../images/moduleSiteOverview.png"
+            alt="Screenshot of the unnamed site"
+          />
+        }
+      />
+      <GameItem
         title="Automation"
         description="Automate from raw ore into more advanced items using machines and conveyor belts!"
         technologies={['C#', 'Unity']}
