@@ -105,13 +105,13 @@ const games = () => {
   return (
     <GamesList>
       <GameItem
-        title="Reddit Viewer"
+        title="Reddit App"
         description="View hot topics strait from the live feed of Reddit!"
         technologies={['React.js', 'CSS']}
         blogPath="/blogs/redditViewer"
         image={
           <StaticImage
-            src="../images/RedditViewer_screenshot.PNG"
+            src="../images/RedditApp/reddit_feed.jpg"
             alt="Screenshot of the Reddit Viewer"
           /> 
         }
